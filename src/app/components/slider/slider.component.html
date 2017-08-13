@@ -1,0 +1,14 @@
+<div class="slider">
+  <div class="frames">
+    <div class="frame" *ngFor="let image of this.images; let i = index"
+         [ngClass]="{'current': i === this.index}">
+      <img src="{{image}}" />
+    </div>
+  </div>
+  <div class="gestures">
+    <div class="gesture"
+         *ngFor="let image of this.images; let i = index"
+         [ngClass]="{'current': i === this.index}"
+         (click)="selectImage(i)"></div>
+  </div>
+</div>

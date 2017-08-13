@@ -9,6 +9,10 @@ import { SignupComponent } from './auth/signup/signup.component';
 import {AppRoutingModule} from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { SliderComponent } from './components/slider/slider.component';
+import {PageSliderModule} from 'ng2-page-slider';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FrameComponent } from './components/slider/frame/frame.component';
 
 
 @NgModule({
@@ -18,13 +22,17 @@ import { FooterComponent } from './footer/footer.component';
     SigninComponent,
     SignupComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SliderComponent,
+    FrameComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PageSliderModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
