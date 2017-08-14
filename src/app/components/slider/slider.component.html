@@ -1,7 +1,25 @@
 <div class="container">
+  <!--<div class="description animated slideInUp">-->
+    <!--<h2>ארוחה זוגית במסעדת Branja התל אביבית במתחם שרונה</h2>-->
+  <!--</div>-->
+
+  <div class="text-slider">
+    <div class="descriptions">
+      <div class="description"
+           *ngFor="let desc of descriptions; let i = index"
+           [ngClass]="{'current': i === this.index}">
+
+        <h2>{{ desc.title }}</h2>
+        <div class="details"> {{ desc.details }} </div>
+        <div class="price"> החל מ {{ desc.price }} ש"ח </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-full">לפרטים ורכישה</button>
+  </div>
   <div class="slider">
     <div class="frames">
-      <div class="frame" *ngFor="let image of this.images; let i = index"
+      <div class="frame"
+           *ngFor="let image of this.images; let i = index"
            [ngClass]="{'current': i === this.index}">
         <img src="{{image}}" />
       </div>
@@ -12,7 +30,7 @@
            [ngClass]="{'current': i === this.index}"
            (click)="selectImage(i)"></div>
     </div>
-  </div>
-  <h2>הקליק/י על התמונה להצגת ההטבה</h2>
+    </div>
+  <!--<h3 >הקליק/י על התמונה להצגת ההטבה</h3>-->
 </div>
 

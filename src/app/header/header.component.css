@@ -7,13 +7,13 @@ header {
   /*background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);*/
   /*background-size: cover;*/
   /*background-position: center;*/
-  /*height: 100vh;*/
+  height: 15vh;
   /*background-attachment: fixed;*/
   /*background-attachment: fixed;*/
   background-color: #ecf0f1;
   font-family: assistantregular;
   font-size: 20px;
-  box-shadow: 10px 10px 5px #888888;
+
 
 }
 
