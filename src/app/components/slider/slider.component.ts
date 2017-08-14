@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ContentChildren, ElementRef, OnInit, QueryList, ViewChildren} from '@angular/core';
+import {AfterViewInit, Component, ContentChildren, OnInit, QueryList} from '@angular/core';
 
 @Component({
   selector: 'app-slider',
@@ -14,10 +14,10 @@ export class SliderComponent implements OnInit, AfterViewInit {
   delay = 4000;
   ngOnInit() {
     this.play();
-    console.log(Object.keys(this));
+    // console.log(Object.keys(this));
   }
   ngAfterViewInit() {
-    console.log(this.children);
+    // console.log(this.children);
   }
 
   selectImage(index: number) {

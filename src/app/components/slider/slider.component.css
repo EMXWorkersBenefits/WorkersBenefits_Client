@@ -1,20 +1,51 @@
+.container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.1))),
+  url(../../../assets/img/background.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url(../../../assets/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  background-attachment: fixed;
+  /*background-attachment: fixed;*/
+  /*background-size: cover;*/
+  /*background-color: black;*/
+  width: 100%;
+}
+
+h2 {
+  padding-top: 15px;
+  font-family: assistantregular;
+  margin: auto;
+  width: 20%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .slider {
+  /*Relative positioning moves an element RELATIVE to its original position.*/
   position: relative;
   overflow: hidden;
-  width: 700px;
+  /*width: 700px;*/
   height: 400px;
+  margin: auto;
+  width: 50%;
+  box-shadow: 5px 5px 10px grey;
 }
 .slider .frames {
+  /*The flex CSS property specifies how a flex item will grow or shrink so as to fit the space available in its flex container.
+  This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.*/
   display: flex;
   position: relative;
   height: 100%;
 }
 
 .slider .frames > .frame {
+  /*With absolute positioning, an element can be placed anywhere on a page.*/
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
+  cursor: pointer;
 }
 
 .slider .frame {
