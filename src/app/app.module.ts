@@ -13,6 +13,7 @@ import { SliderComponent } from './components/slider/slider.component';
 import {PageSliderModule} from 'ng2-page-slider';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FrameComponent } from './components/slider/frame/frame.component';
+import { PictureGridComponent } from './picture-grid/picture-grid.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { FrameComponent } from './components/slider/frame/frame.component';
     FooterComponent,
     SliderComponent,
     FrameComponent,
+    PictureGridComponent,
   ],
   imports: [
     BrowserModule,

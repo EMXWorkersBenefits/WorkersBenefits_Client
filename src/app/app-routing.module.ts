@@ -4,9 +4,9 @@ import {SignupComponent} from './auth/signup/signup.component';
 import {HomeComponent} from './home/home.component';
 
 const appRouters: Routes = [
-  {path: '', component: HomeComponent, pathMatch: 'full'},
+  // {path: '', component: HomeComponent, pathMatch: 'full'},
   {path: 'signup', component: SignupComponent}
-]
+];
 @NgModule({
   imports: [RouterModule.forRoot(appRouters)],
   exports: [RouterModule]
