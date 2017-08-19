@@ -14,6 +14,8 @@ import {PageSliderModule} from 'ng2-page-slider';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FrameComponent } from './components/slider/frame/frame.component';
 import { PictureGridComponent } from './picture-grid/picture-grid.component';
+import { UserPurchaseHistoryComponent } from './user-purchase-history/user-purchase-history.component';
+
 
 
 @NgModule({
@@ -27,6 +29,7 @@ import { PictureGridComponent } from './picture-grid/picture-grid.component';
     SliderComponent,
     FrameComponent,
     PictureGridComponent,
+    UserPurchaseHistoryComponent,
   ],
   imports: [
     BrowserModule,
