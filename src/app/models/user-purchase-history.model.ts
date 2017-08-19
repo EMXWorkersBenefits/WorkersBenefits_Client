@@ -15,6 +15,7 @@ export class UserPurchaseHistory {
     this.deal = deal;
     this.img = img;
     this.purchased = purchased;
+    this.price = price;
     this.discount = discount;
     this.expires = expires;
   }
