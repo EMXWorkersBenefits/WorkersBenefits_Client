@@ -8,16 +8,13 @@ import {Description} from '../../models/description.model';
 })
 export class SliderComponent implements OnInit, AfterViewInit {
   @ContentChildren('frame') children: QueryList<any[]>;
-  descriptions: Description[] = [
-  ];
   index = 0;
   isPlaying = false;
-  images: String[] = ['/assets/img/food.jpg', '/assets/img/gym.jpg', '/assets/img/montenegro.jpg'];
   timeout;
   delay = 4000;
   frames = [
     { img: '/assets/img/food.jpg',
-      description: new Description('ארוחה זוגית במסעדת Branja התל אביבית במתחם שרונה',
+      description: new Description('ארוחה זוגית במסעדת ברנזה התל אביבית במתחם שרונה',
         'מסעדת ברנזה של המסעדן הראל בלו משיקה תפריט קיץ חדש ומציעה ארוחה זוגית בת 8 מנות',
         39)
     },

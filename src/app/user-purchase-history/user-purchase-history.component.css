@@ -1,0 +1,136 @@
+.purchases-container {
+  margin: 0 100px;
+}
+
+div {
+  font-family: assistantregular;
+}
+
+.thead-inverse {
+  background-color: #517fa4;
+
+}
+
+.table-head-coneant {
+  direction: rtl;
+  display: none;
+}
+
+.purchase-img {
+  height: 130px;
+  width: 200px;
+  border: 1px solid grey ;
+}
+
+.table-head-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-head-col {
+  width: 20%;
+}
+
+.price-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+hr.style13 {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+
+/*------------------------------------------------------------*/
+/* PARAGRAPHS */
+/*------------------------------------------------------------*/
+
+.icon-big {
+  font-size: 200%;
+  display: block;
+  margin-bottom: 10px;
+  color: #e67e22;
+  display: inline-block;
+}
+
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  color: #e67e22;
+  font-size: 120%;
+
+  /*secrets to align text and icons*/
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+
+}
+
+/*------------------------------------------------------------*/
+/* BUTTONS */
+/*------------------------------------------------------------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: white;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border:1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active
+{
+  background-color: rgba(230, 126, 34, 0.7);
+  color: black;
+}
+
+.btn-full:hover,
+.btn-full:active
+{
+  border: 1px solid #cf6d17;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.my-icons {
+  font-size: large;
+  padding-left: 4px;
+}
+
+.check-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+
+}
+
+
+
+
