@@ -18,10 +18,10 @@ export class UserPurchaseHistoryComponent implements OnInit {
       true,
       3999,
       50,
-      '555'
+      '12.10.17'
     ),
     new UserPurchaseHistory(
-      'מנוי שנתי למגוון חדרי כושר ברחבי הארץ',
+      'מנוי למגוון חדרי כושר',
       '/assets/img/gym.jpg',
       'כניסה ב-15 ₪, או מנוי חודשי ב-89 ₪ בלבד! ' +
       'כולל חדר כושר ומבחר חוגים. עד לשעה 23:00',
@@ -29,10 +29,10 @@ export class UserPurchaseHistoryComponent implements OnInit {
       true,
       249,
       15,
-      '555'
+      '21.03.18'
     ),
     new UserPurchaseHistory(
-      'ארוחה זוגית במסעדת ברנזה ',
+      'ארוחה זוגית בברנזה ',
       '/assets/img/food.jpg',
       'מסעדת ברנזה של המסעדן הראל בלו משיקה תפריט קיץ חדש ' +
       'ומציעה ארוחה זוגית ב-229 ₪ או ארוחת פרמיום זוגית ב- 329 ₪.' +
@@ -41,12 +41,18 @@ export class UserPurchaseHistoryComponent implements OnInit {
       false,
       199,
       35,
-      '555'
+      '03.01.18'
     ),
   ];
+  filterHeight;
   constructor() { }
 
   ngOnInit() {
   }
-
+  getPurchasesSize() {
+   return this.purchases.length;
+  }
+  getFilterHeight() {
+    return this.getPurchasesSize() + (42 * (this.getPurchasesSize() - 1));
+  }
 }

@@ -72,18 +72,18 @@
         </div>
         <div class="row">
             <button
-              class="btn btn-success"
+              class="emx-btn btn-success"
               type="submit"
               [disabled]="!f.valid">
               {{ editMode ?  'Update' : 'Add' }}</button>
             <button
-              class="btn btn-danger"
+              class="emx-btn btn-danger"
               type="button"
               (click)="onDelete()"
               *ngIf="editMode">
               Delete</button>
             <button
-              class="btn btn-success"
+              class="emx-btn btn-success"
               type="button"
               (click)="onClear()"
               [disabled]="!editMode">

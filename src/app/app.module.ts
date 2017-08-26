@@ -15,6 +15,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FrameComponent } from './components/slider/frame/frame.component';
 import { PictureGridComponent } from './picture-grid/picture-grid.component';
 import { UserPurchaseHistoryComponent } from './user-purchase-history/user-purchase-history.component';
+import { ShortenPipe } from './pipes/shorten.pipe';
 
 
 
@@ -30,6 +31,7 @@ import { UserPurchaseHistoryComponent } from './user-purchase-history/user-purch
     FrameComponent,
     PictureGridComponent,
     UserPurchaseHistoryComponent,
+    ShortenPipe,
   ],
   imports: [
     BrowserModule,

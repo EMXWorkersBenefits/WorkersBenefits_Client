@@ -206,7 +206,7 @@ h3 {
 /* BUTTONS */
 /*------------------------------------------------------------*/
 
-.btn {
+.emx-btn {
   position: absolute;
   margin-top: 95%;
   right: -15%;
@@ -219,8 +219,8 @@ h3 {
   /*width: 20%;*/
 }
 
-.btn:link,
-.btn:visited,
+.emx-btn:link,
+.emx-btn:visited,
 input[type=button] {
   display: inline-block;
   padding: 10px 30px;
