@@ -9,7 +9,28 @@
         <li><a href="#">עמוד ראשי</a></li>
       </ul>
       <!--<a class="mobile-nav-icon js&#45;&#45;nav-icon"><i class="ion-navicon-round"></i></a>-->
+      <ul class="main-nav left-side">
+        <li><button class="signup" (click)="myModal.open()"> להצטרפות </button></li>
+        <modal #myModal>
+          <modal-header >
+            <h1 class="center-element"> שליחת קוד לנייד </h1>
+          </modal-header>
+          <modal-content>
+            <div class="center-element">
+              ת.ז : <input type="text"  name="id">
+              <hr>
+              נייד : <input type="text"  name="phone">
+            </div>
+
+          </modal-content>
+          <modal-footer class="center-button">
+            <button class="btn btn-primary" (click)="myModal.close()">לשליחה</button>
+          </modal-footer>
+        </modal>
+      </ul>
     </div>
   </nav>
 </header>
+
+
 

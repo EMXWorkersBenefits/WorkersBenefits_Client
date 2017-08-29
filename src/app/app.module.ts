@@ -16,6 +16,8 @@ import { FrameComponent } from './components/slider/frame/frame.component';
 import { PictureGridComponent } from './picture-grid/picture-grid.component';
 import { UserPurchaseHistoryComponent } from './user-purchase-history/user-purchase-history.component';
 import { ShortenPipe } from './pipes/shorten.pipe';
+import { ModalComponent } from './modal/modal.component';
+import {ModalModule} from 'ng2-modal';
 
 
 
@@ -32,6 +34,7 @@ import { ShortenPipe } from './pipes/shorten.pipe';
     PictureGridComponent,
     UserPurchaseHistoryComponent,
     ShortenPipe,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { ShortenPipe } from './pipes/shorten.pipe';
     HttpModule,
     AppRoutingModule,
     PageSliderModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
