@@ -18,6 +18,8 @@ import { UserPurchaseHistoryComponent } from './user-purchase-history/user-purch
 import { ShortenPipe } from './pipes/shorten.pipe';
 import { ModalComponent } from './modal/modal.component';
 import {ModalModule} from 'ng2-modal';
+import { BenefitsByCategoryComponent } from './benefits-by-category/benefits-by-category.component';
+import {BenefitsByCqategoryService} from './benefits-by-category/benefits-by-category.service';
 
 
 
@@ -35,6 +37,7 @@ import {ModalModule} from 'ng2-modal';
     UserPurchaseHistoryComponent,
     ShortenPipe,
     ModalComponent,
+    BenefitsByCategoryComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,7 @@ import {ModalModule} from 'ng2-modal';
     BrowserAnimationsModule,
     ModalModule
   ],
-  providers: [],
+  providers: [BenefitsByCqategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

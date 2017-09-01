@@ -1,14 +1,63 @@
+<!--<nav class="nav">-->
+  <!--<ul>-->
+    <!--<li>-->
+      <!--<a href="#">Nav Item</a>-->
+      <!--<ul>-->
+        <!--<li><a href="#">Subnav Item</a></li>-->
+        <!--<li><a href="#">Subnav Item</a></li>-->
+        <!--<li><a href="#">Subnav Item</a></li>-->
+      <!--</ul>-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--<a href="#">Nav Item</a>-->
+      <!--<ul>-->
+        <!--<li><a href="#">Subnav Item</a></li>-->
+        <!--<li><a href="#">Subnav Item</a></li>-->
+        <!--<li><a href="#">Subnav Item</a></li>-->
+      <!--</ul>-->
+    <!--</li>-->
+  <!--</ul>-->
+<!--</nav>-->
+
 <header>
   <nav>
     <div class="emx-header">
-      <!--<img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">-->
-      <!--<img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">-->
-      <ul class="main-nav js--main-nav">
-        <li scrollTo scrollTargetSelector="#test-section"><a href="#">הפרופיל שלי</a></li>
-        <li><a href="#">צור קשר</a></li>
-        <li><a href="#">עמוד ראשי</a></li>
-      </ul>
-      <!--<a class="mobile-nav-icon js&#45;&#45;nav-icon"><i class="ion-navicon-round"></i></a>-->
+      <div class="right-side">
+        <!--<img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">-->
+        <!--<img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">-->
+        <img src="../../assets/img/emx-logo.png" alt="logo" class="logo-img">
+        <ul class="main-nav js--main-nav">
+          <li scrollTo scrollTargetSelector="#test-section"><a href="#">הפרופיל שלי</a></li>
+          <li><a href="#">צור קשר</a></li>
+          <li><a href="#">עמוד ראשי</a></li>
+        </ul>
+        <nav class="inner-nav">
+          <ul>
+            <li>
+              <a href="#" class="categories-drop-down-header"> הקטגוריות שלנו </a>
+              <ul class="sub-categories">
+                <li><a href="#"> <i class="fa fa-globe" aria-hidden="true"></i>  מסביב לעולם </a></li>
+                <li><a href="#"><i class="fa fa-television" aria-hidden="true"></i> גאדג'טים
+                </a></li>
+                <li><a href="#"><i class="fa fa-music" aria-hidden="true"></i> יוצאים לבלות
+                </a></li>
+                <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i>  לגוף ולנפש
+                </a></li>
+                <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> חווית קולינריות
+                </a></li>
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> שפר ביתך
+                </a></li>
+                <li><a href="#"><i class="fa fa-paw" aria-hidden="true"></i> חברים על ארבע
+                </a></li>
+                <li><a href="#"><i class="fa fa-bath" aria-hidden="true"></i> בא לי להתפנק
+                </a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!--<a class="mobile-nav-icon js&#45;&#45;nav-icon"><i class="ion-navicon-round"></i></a>-->
+      </div>
+
       <ul class="main-nav left-side">
         <li><button class="signup" (click)="myModal.open()"> להצטרפות </button></li>
         <modal #myModal>
