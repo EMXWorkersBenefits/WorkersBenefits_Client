@@ -32,10 +32,8 @@ export class SliderComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.play();
-    // console.log(Object.keys(this));
   }
   ngAfterViewInit() {
-    // console.log(this.children);
   }
 
   selectFrame(index: number) {

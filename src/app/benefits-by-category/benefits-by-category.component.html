@@ -1,0 +1,20 @@
+<div class="benefits-container">
+
+
+  <div class="sort-benifits">
+    kjhbgf
+  </div>
+  <div class="benefits">
+    <div class="benefits-row" *ngFor="let row of benefits">
+      <div class="benefit-box" *ngFor="let benefit of row">
+          <div class="title details"> {{ benefit.title }} </div>
+          <img src="{{ benefit.image }}" class="purchase-img details" />
+          <div class="our-price details"> המחיר שלנו:  <b>{{ benefit.ourPrice }} ש"ח </b></div>
+          <div class="normal-price details"> מחיר מקורי:  <b>{{ benefit.normalPrice }}  ש"ח <div class="discount details"><u>({{ benefit.discount }}% הנחה</u></div>) </b></div>
+          <div class="short-desc details"> {{ benefit.shortDesc }} </div>
+          <div class="details timer-countdown"> מהרו! נותרו רק עוד: <u>  {{ benefit.expires }}</u>  </div>
+          <button class="emx-btn btn-full details"> לרכישה </button>
+      </div>
+    </div>
+  </div>
+</div>

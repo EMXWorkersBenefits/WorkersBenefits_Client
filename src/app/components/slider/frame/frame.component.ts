@@ -10,7 +10,7 @@ export class FrameComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.element);
+    // console.log(this.element);
   }
 
 }

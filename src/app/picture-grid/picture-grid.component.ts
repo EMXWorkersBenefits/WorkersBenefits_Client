@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-picture-grid',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PictureGridComponent implements OnInit {
 
-  constructor() { }
+  constructor(private  router: Router) { }
 
   ngOnInit() {
+  }
+
+  onByCategory(category: string) {
+    this.router.navigate(['/benefits/' + category]);
   }
 
 }

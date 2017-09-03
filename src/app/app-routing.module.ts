@@ -8,7 +8,7 @@ const appRouters: Routes = [
   {path: '', component: HomeComponent, pathMatch: 'full'},
   {path: 'signup', component: SignupComponent},
   {path: 'purchaseHistory', component: UserPurchaseHistoryComponent},
-  {path: 'benefits', component: BenefitsByCategoryComponent}
+  {path: 'benefits/:category', component: BenefitsByCategoryComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(appRouters)],
