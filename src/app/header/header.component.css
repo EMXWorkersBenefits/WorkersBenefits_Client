@@ -10,13 +10,60 @@ header {
   height: 70px;
   /*background-attachment: fixed;*/
   /*background-attachment: fixed;*/
-  background-color: #ecf0f1;
+  background-color: rgba(236, 240, 241, 0.9);
   font-family: assistantregular;
   font-size: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
 
 }
 
+.sign-modal {
+  display: flex;
+}
+
+
+
+
+.sign-modal-header {
+  padding: 0;
+  border: none;
+  display: flex;
+}
+.signin-modal {
+  background-color: #3b5998;
+  width: 40px;
+  height: 40px;
+}
+
+.signup-modal {
+  background-color: #8c8b8b;
+  width: 40px;
+  height: 40px;
+}
+
+.first-deg-li {
+  position: relative;
+  z-index: 9999;
+}
+
+.sub-categories {
+  position: absolute;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
 nav {
+}
+
+.category-icon {
+  margin-right: 10px;
+  margin-left: 5px;
 }
 
 .emx-header {
@@ -160,12 +207,12 @@ header nav {
   font-weight: bold;
 }
 
-.signup {
+.signup-modal {
   border: none;
   background-color: transparent;
 }
 
-.signup:hover {
+.signup-modal:hover {
   border-bottom: 2px solid #e67e22;
 }
 
@@ -183,9 +230,10 @@ header nav {
 
 .inner-nav {
   display: block;
-  margin-top: 18px;
-
+  margin-top: 14px;
 }
+
+.
 
 .inner-nav li ul {
   position:absolute;
@@ -212,7 +260,13 @@ header nav {
 
 .sub-categories {
   background-color: #efefef;
+  width: 220px;
 
+}
+
+.sub-categories li {
+  display: block;
+  margin-right: 10px;
 }
 
 .categories-drop-down-header {

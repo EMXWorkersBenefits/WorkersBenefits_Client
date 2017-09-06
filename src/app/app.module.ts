@@ -17,9 +17,10 @@ import { PictureGridComponent } from './picture-grid/picture-grid.component';
 import { UserPurchaseHistoryComponent } from './user-purchase-history/user-purchase-history.component';
 import { ShortenPipe } from './pipes/shorten.pipe';
 import { ModalComponent } from './modal/modal.component';
-import {ModalModule} from 'ng2-modal';
 import { BenefitsByCategoryComponent } from './benefits-by-category/benefits-by-category.component';
 import {BenefitsByCqategoryService} from './benefits-by-category/benefits-by-category.service';
+import {ModalModule} from 'ng2-modal';
+import { PopupModalComponent } from './popup-modal/popup-modal.component';
 
 
 
@@ -38,6 +39,7 @@ import {BenefitsByCqategoryService} from './benefits-by-category/benefits-by-cat
     ShortenPipe,
     ModalComponent,
     BenefitsByCategoryComponent,
+    PopupModalComponent,
   ],
   imports: [
     BrowserModule,

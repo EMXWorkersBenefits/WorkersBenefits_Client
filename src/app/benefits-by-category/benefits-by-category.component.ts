@@ -11,6 +11,7 @@ import {ActivatedRoute} from '@angular/router';
 export class BenefitsByCategoryComponent implements OnInit {
   category: string;
   benefits: BenefitsByCategory[][];
+  sortByPriceVal: number;
 
   constructor(private benefitsService: BenefitsByCqategoryService, private route: ActivatedRoute) { }
 
@@ -47,6 +48,11 @@ export class BenefitsByCategoryComponent implements OnInit {
       const now = new Date().getTime();
       this.benefitsService.expireSubject.next(now);
     }, 6000);
+  };
+
+  outputUpdate(vol) {
+    console.log(vol);
+    // this.sortByPriceVal = (<HTMLInputElement>document.getElementById('volume')).value = vol;
   };
 
 }

@@ -1,24 +1,3 @@
-<!--<nav class="nav">-->
-  <!--<ul>-->
-    <!--<li>-->
-      <!--<a href="#">Nav Item</a>-->
-      <!--<ul>-->
-        <!--<li><a href="#">Subnav Item</a></li>-->
-        <!--<li><a href="#">Subnav Item</a></li>-->
-        <!--<li><a href="#">Subnav Item</a></li>-->
-      <!--</ul>-->
-    <!--</li>-->
-    <!--<li>-->
-      <!--<a href="#">Nav Item</a>-->
-      <!--<ul>-->
-        <!--<li><a href="#">Subnav Item</a></li>-->
-        <!--<li><a href="#">Subnav Item</a></li>-->
-        <!--<li><a href="#">Subnav Item</a></li>-->
-      <!--</ul>-->
-    <!--</li>-->
-  <!--</ul>-->
-<!--</nav>-->
-
 <header>
   <nav>
     <div class="emx-header">
@@ -31,21 +10,21 @@
         </ul>
         <nav class="inner-nav">
           <ul>
-            <li>
+            <li class="first-deg-li">
               <a href="#" class="categories-drop-down-header"> הקטגוריות שלנו </a>
               <ul class="sub-categories">
-                <li><a routerLink="/benefits/vacations"> <i class="fa fa-globe" aria-hidden="true"></i>  מסביב לעולם </a></li>
-                <li><a routerLink="/benefits/Electronics"><i class="fa fa-television" aria-hidden="true"></i> גאדג'טים
+                <li><a routerLink="/benefits/vacations"> <i class="fa fa-globe category-icon" aria-hidden="true"></i>  מסביב לעולם </a></li>
+                <li><a routerLink="/benefits/Electronics"><i class="fa fa-television category-icon" aria-hidden="true"></i> גאדג'טים
                 </a></li>
-                <li><a routerLink="/benefits/Concerts_n_Shows"><i class="fa fa-music" aria-hidden="true"></i> יוצאים לבלות
+                <li><a routerLink="/benefits/Concerts_n_Shows"><i class="fa fa-music category-icon" aria-hidden="true"></i> יוצאים לבלות
                 </a></li>
-                <li><a routerLink="/benefits/Fitness"><i class="fa fa-heart" aria-hidden="true"></i>  לגוף ולנפש
+                <li><a routerLink="/benefits/Fitness"><i class="fa fa-heart category-icon" aria-hidden="true"></i>  לגוף ולנפש
                 </a></li>
-                <li><a routerLink="/benefits/Restaurants"><i class="fa fa-cutlery" aria-hidden="true"></i> חווית קולינריות
+                <li><a routerLink="/benefits/Restaurants"><i class="fa fa-cutlery category-icon" aria-hidden="true"></i> חווית קולינריות
                 </a></li>
-                <li><a routerLink="/benefits/Home_Interior"><i class="fa fa-home" aria-hidden="true"></i> שפר ביתך
+                <li><a routerLink="/benefits/Home_Interior"><i class="fa fa-home category-icon" aria-hidden="true"></i> שפר ביתך
                 </a></li>
-                <li><a routerLink="/benefits/Pets"><i class="fa fa-paw" aria-hidden="true"></i> חברים על ארבע
+                <li><a routerLink="/benefits/Pets"><i class="fa fa-paw category-icon" aria-hidden="true"></i> חברים על ארבע
                 </a></li>
                 <li><a routerLink="/benefits/Spa_n_Beauty"><i class="fa fa-bath" aria-hidden="true"></i> בא לי להתפנק
                 </a></li>
@@ -57,23 +36,7 @@
       </div>
 
       <ul class="main-nav left-side">
-        <li><button class="signup" (click)="myModal.open()"> להצטרפות </button></li>
-        <modal #myModal>
-          <modal-header >
-            <h1 class="center-element"> שליחת קוד לנייד </h1>
-          </modal-header>
-          <modal-content>
-            <div class="center-element">
-              ת.ז : <input type="text"  name="id">
-              <hr>
-              נייד : <input type="text"  name="phone">
-            </div>
-
-          </modal-content>
-          <modal-footer class="center-button">
-            <button class="btn btn-primary" (click)="myModal.close()">לשליחה</button>
-          </modal-footer>
-        </modal>
+        <app-popup-modal></app-popup-modal>
       </ul>
     </div>
   </nav>
