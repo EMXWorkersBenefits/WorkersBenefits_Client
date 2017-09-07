@@ -2,6 +2,7 @@
   background-color: #efefef;
   display: flex;
   justify-content: center;
+  font-family: 'Alef', sans-serif;
 }
 .purchase {
   height: 280px;
@@ -21,9 +22,9 @@
 }
 
 
-div {
-  font-family: assistantregular;
-}
+/*div {*/
+  /*font-family: assistantregular;*/
+/*}*/
 
 .filter-purchases {
   height: 423px;

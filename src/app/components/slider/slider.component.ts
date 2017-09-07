@@ -50,10 +50,13 @@ export class SliderComponent implements OnInit, AfterViewInit {
     }
   }
   forward () {
-    this.index = this.index + 1 >= this.frames.length ? 0 : this.index + 1;
+    this.index = ((this.index + 1) === this.frames.length) ? 0 : (this.index + 1);
   }
   backword () {
-    this.index = this.index - 1 === 0 ? this.frames.length : this.index - 1;
+    console.log('length: ', this.frames.length);
+    if (this.index === 0) {console.log('yes');
+    }
+    this.index = this.index === 0 ? (this.frames.length - 1) : this.index - 1;
   }
 }
 
