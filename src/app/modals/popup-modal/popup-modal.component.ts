@@ -1,4 +1,5 @@
 import {AfterViewInit, Component, ElementRef, OnInit} from '@angular/core';
+import {ModalService} from '../modal.service';
 
 @Component({
   selector: 'app-popup-modal',
@@ -12,7 +13,9 @@ export class PopupModalComponent implements OnInit, AfterViewInit {
 
 // Get the <span> element that closes the modal
   span = document.getElementsByClassName('close')[0];
-  constructor(private myElement: ElementRef) {
+  constructor(
+    private myElement: ElementRef,
+    private modalService: ModalService ) {
   }
 
   ngOnInit() {
@@ -31,6 +34,11 @@ export class PopupModalComponent implements OnInit, AfterViewInit {
   onclickClose = function() {
   this.modal.style.display = 'none';
 };
+
+  signup() {
+    this.modal.style.display = 'none';
+    this.modalService.status.next('password');
+  }
 
 // When the user clicks anywhere outside of the modal, close it
   onclickOutside(event) {

@@ -19,8 +19,10 @@ import { BenefitsByCategoryComponent } from './components/benefits-by-category/b
 import {BenefitsByCqategoryService} from './components/benefits-by-category/benefits-by-category.service';
 import {ModalModule} from 'ng2-modal';
 import { PopupModalComponent } from './modals/popup-modal/popup-modal.component';
-import { ConfirmPasswordModalComponent } from './modals/popup-modal/confirm-password-modal/confirm-password-modal.component';
+import { ConfirmPasswordModalComponent } from './modals/confirm-password-modal/confirm-password-modal.component';
 import {PictureGridComponent} from './components/picture-grid/picture-grid.component';
+import {ModalService} from './modals/modal.service';
+import { MailPasswordModalComponent } from './modals/mail-password-modal/mail-password-modal.component';
 
 
 
@@ -39,7 +41,8 @@ import {PictureGridComponent} from './components/picture-grid/picture-grid.compo
     ShortenPipe,
     BenefitsByCategoryComponent,
     PopupModalComponent,
-    ConfirmPasswordModalComponent
+    ConfirmPasswordModalComponent,
+    MailPasswordModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,7 @@ import {PictureGridComponent} from './components/picture-grid/picture-grid.compo
     BrowserAnimationsModule,
     ModalModule
   ],
-  providers: [BenefitsByCqategoryService],
+  providers: [BenefitsByCqategoryService, ModalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
