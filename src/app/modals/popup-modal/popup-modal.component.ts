@@ -34,8 +34,8 @@ export class PopupModalComponent implements OnInit, AfterViewInit {
 
 // When the user clicks anywhere outside of the modal, close it
   onclickOutside(event) {
-  if (event.target === this.modal) {
-    // this.modal.style.display = 'none';
-  }
+  // if (event.target === this.modal) {
+  //   // this.modal.style.display = 'none';
+  // }
 }
 }

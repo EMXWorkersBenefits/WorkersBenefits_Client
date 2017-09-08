@@ -1,5 +1,5 @@
 import {Subject} from 'rxjs/Subject';
-import {BenefitsByCategory} from '../models/benefits-by-category.model';
+import {BenefitsByCategory} from '../../models/benefits-by-category.model';
 export class BenefitsByCqategoryService {
   benefits: BenefitsByCategory[][] = [
     [

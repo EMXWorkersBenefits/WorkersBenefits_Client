@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {BenefitsByCategory} from '../models/benefits-by-category.model';
+import {BenefitsByCategory} from '../../models/benefits-by-category.model';
 import {BenefitsByCqategoryService} from './benefits-by-category.service';
 import {ActivatedRoute} from '@angular/router';
 

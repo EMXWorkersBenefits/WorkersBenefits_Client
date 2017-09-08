@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {UserPurchaseHistory} from '../models/user-purchase-history.model';
+import {UserPurchaseHistory} from '../../models/user-purchase-history.model';
 
 @Component({
   selector: 'app-user-purchase-history',
