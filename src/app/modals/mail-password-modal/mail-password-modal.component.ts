@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, ElementRef, OnInit} from '@angular/core';
-import {ModalService} from "../modal.service";
+import {ModalService} from '../modal.service';
 
 @Component({
   selector: 'app-mail-password-modal',
@@ -16,6 +16,7 @@ export class MailPasswordModalComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.modalService.status.subscribe(
       (status: string) => {
+        console.log('subscribed');
         if (status === 'mailPassword') {
           this.onclickOpen();
         }
@@ -35,10 +36,12 @@ export class MailPasswordModalComponent implements OnInit, AfterViewInit {
   onclickClose() {
     this.modal.style.display = 'none';
   };
-
   signup() {
     this.modal.style.display = 'none';
     this.modalService.status.next('success');
   }
-
+  onShowAgreement() {
+    this.modal.style.display = 'none';
+    this.modalService.status.next('agreement');
+  }
 }

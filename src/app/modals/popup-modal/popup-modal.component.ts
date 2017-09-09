@@ -26,7 +26,6 @@ export class PopupModalComponent implements OnInit, AfterViewInit {
 
   // When the user clicks on the button, open the modal
   onclickOpen() {
-    console.log('modall: ', this.modal);
     this.modal.style.display = 'block';
 }
 

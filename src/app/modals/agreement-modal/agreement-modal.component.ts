@@ -2,11 +2,11 @@ import {AfterViewInit, Component, ElementRef, OnInit} from '@angular/core';
 import {ModalService} from '../modal.service';
 
 @Component({
-  selector: 'app-confirm-password-modal',
-  templateUrl: './confirm-password-modal.component.html',
-  styleUrls: ['./confirm-password-modal.component.css']
+  selector: 'app-agreement-modal',
+  templateUrl: './agreement-modal.component.html',
+  styleUrls: ['./agreement-modal.component.css']
 })
-export class ConfirmPasswordModalComponent implements OnInit, AfterViewInit {
+export class AgreementModalComponent implements OnInit, AfterViewInit {
   modal;
 
   constructor(
@@ -16,7 +16,8 @@ export class ConfirmPasswordModalComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.modalService.status.subscribe(
       (status: string) => {
-        if (status === 'password') {
+        console.log('subscribed');
+        if (status === 'agreement') {
           this.onclickOpen();
         }
       });
@@ -34,10 +35,8 @@ export class ConfirmPasswordModalComponent implements OnInit, AfterViewInit {
   // When the user clicks on <span> (x), close the modal
   onclickClose() {
     this.modal.style.display = 'none';
+    this.modalService.status.next('mailPassword');
   };
 
-  signup() {
-    this.modal.style.display = 'none';
-    this.modalService.status.next('mailPassword');
-  }
+
 }

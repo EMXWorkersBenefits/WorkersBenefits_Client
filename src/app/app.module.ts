@@ -23,6 +23,8 @@ import { ConfirmPasswordModalComponent } from './modals/confirm-password-modal/c
 import {PictureGridComponent} from './components/picture-grid/picture-grid.component';
 import {ModalService} from './modals/modal.service';
 import { MailPasswordModalComponent } from './modals/mail-password-modal/mail-password-modal.component';
+import { AgreementModalComponent } from './modals/agreement-modal/agreement-modal.component';
+import { SuccessModalComponent } from './modals/success-modal/success-modal.component';
 
 
 
@@ -43,6 +45,8 @@ import { MailPasswordModalComponent } from './modals/mail-password-modal/mail-pa
     PopupModalComponent,
     ConfirmPasswordModalComponent,
     MailPasswordModalComponent,
+    AgreementModalComponent,
+    SuccessModalComponent,
   ],
   imports: [
     BrowserModule,
